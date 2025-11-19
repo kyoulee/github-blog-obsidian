@@ -1,12 +1,10 @@
 ---
 title: {{title}}
-created:
-  "{ date }":
-updated:
-  "{ date }":
+description : kyoulee blog
+image: https://kyoulee.com/post/templates/images/default-og-image.jpg
+created: {{date}}
+updated: {{date}}
 tags:
-  - "{ title }":
-status: in progress
-alias:
-  - "{ title }":
+  - {{title}}
+status: public
 ---

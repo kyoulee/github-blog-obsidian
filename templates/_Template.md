@@ -7,4 +7,6 @@ updated: {{date}}
 tags:
   - {{title}}
 status: public
+id : 0
+writer : kyoulee
 ---

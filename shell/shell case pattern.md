@@ -1,3 +1,16 @@
+---
+title: shell case pattern
+description : shell script의 패턴에 대한 설명
+preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+created: 2025-12-21T11:12:19+09:00
+updated: 2025-12-21T11:12:19+09:00
+tags:
+  - shell case pattern
+status: public
+id : 0
+writer : kyoulee
+---
+
 ## 쉘 `case` 구문의 다양한 패턴
 
 > [!NOTE]

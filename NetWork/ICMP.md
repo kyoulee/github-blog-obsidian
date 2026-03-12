@@ -1,7 +1,7 @@
 ---
 title: ICMP
 description: kyoulee blog
-preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+preview: /post/templates/images/default-og-image.jpg
 created: 2025-12-27T06:12:48+09:00
 updated: 2025-12-27T06:12:48+09:00
 tags:
@@ -49,22 +49,35 @@ struct icmp_header
     } icmp_hun;
     union
     {
-    struct id_ts /* ICMP_TIMESTAMP, ICMP_TIMESTAMPREPLY */
-    {
-        n_time its_otime; /* Originate timestamp */
-        n_time its_rtime; /* Recieve timestamp */
-        n_time its_ttime; /* Transmit timestamp */
-    } id_ts;
-    struct id_ip /* Original IP header */
-    {
-        struct ip idi_ip;
-        /* options and then 64 bits of data */
-    } id_ip;
-    unsigned long id_mask; /* ICMP_ADDRESS, ICMP_ADDRESSREPLY */
-    char id_data[1];
+        struct id_ts /* ICMP_TIMESTAMP, ICMP_TIMESTAMPREPLY */
+        {
+            n_time its_otime; /* Originate timestamp */
+            n_time its_rtime; /* Recieve timestamp */
+            n_time its_ttime; /* Transmit timestamp */
+        } id_ts;
+        struct id_ip /* Original IP header */
+        {
+            struct ip idi_ip;
+            /* options and then 64 bits of data */
+        } id_ip;
+        unsigned long id_mask; /* ICMP_ADDRESS, ICMP_ADDRESSREPLY */
+        char id_data[1];
     } icmp_dun;
 };
 ```
+
+
+다음은 각 타입별 설명이다.
+
+|**계보**|**RFC 번호**|**주요 명칭**|**핵심 역할 (무엇을 하는가?)**|**비고**|
+|---|---|---|---|---|
+|**1단계: 기초**|**RFC 792**|**ICMPv4 기초**|Echo(Ping), Destination Unreachable, TTL 만료 등 **가장 기본적인 에러/상태 보고**|**필수 구현**|
+|**2단계: 탐색**|**RFC 1256**|**Router Discovery**|내 주변의 **게이트웨이(라우터)를 자동으로 찾고** 광고함|**네트워크 자동설정**|
+|**3단계: 최적화**|**RFC 1191**|**Path MTU Discovery**|목적지까지 가는 길 중 **가장 좁은 통로(MTU) 크기**를 알아내어 패킷 최적화|**성능 최적화**|
+|**4단계: 확장**|**RFC 4884**|**ICMP Extensions**|에러 메시지에 **MPLS 정보 등 추가 데이터**를 담을 수 있게 확장|**고급 트러블슈팅**|
+|**5단계: 미래**|**RFC 4443**|**ICMPv6**|IPv6 환경에서의 기본 통신 및 **주소 관리(ARP 역할 포함)** 총괄|**차세대 표준**|
+
+ICMP는 RFC792 RFC1256 과 같이 
 
 ## RFC 1256
 

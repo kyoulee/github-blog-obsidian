@@ -1,7 +1,7 @@
 ---
 title: Exam 200 실전 문제
 description: kyoulee blog
-preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+preview: /post/templates/images/default-og-image.jpg
 created: 2026-02-07T03:02:54+09:00
 updated: 2026-02-07T03:02:54+09:00
 tags:

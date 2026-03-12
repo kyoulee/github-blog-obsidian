@@ -1,7 +1,7 @@
 ---
 title: shell case pattern
 description : shell script의 패턴에 대한 설명
-preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+preview: /post/templates/images/default-og-image.jpg
 created: 2025-12-21T11:12:19+09:00
 updated: 2025-12-21T11:12:19+09:00
 tags:

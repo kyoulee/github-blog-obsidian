@@ -1,7 +1,7 @@
 ---
 title: config
 description: kyoulee blog
-preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+preview: /post/templates/images/default-og-image.jpg
 created: 2026-03-08T04:03:25+09:00
 updated: 2026-03-08T04:03:25+09:00
 tags:

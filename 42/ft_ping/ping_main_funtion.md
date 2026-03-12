@@ -1,7 +1,7 @@
 ---
 title: ping_main_funtion
 description: kyoulee blog
-preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+preview: /post/templates/images/default-og-image.jpg
 created: 2025-12-24T06:12:36+09:00
 updated: 2025-12-27T06:12:36+09:00
 tags:

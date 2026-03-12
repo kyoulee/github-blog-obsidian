@@ -1,7 +1,7 @@
 ---
 title: Ping
 description : kyoulee blog
-preview: https://kyoulee.com/post/templates/images/default-og-image.jpg
+preview: /post/templates/images/default-og-image.jpg
 created: 2025-12-26T06:12:05+09:00
 updated: 2025-12-27T06:12:05+09:00
 tags:

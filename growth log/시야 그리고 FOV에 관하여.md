@@ -22,7 +22,7 @@ writer : kyoulee
 
 ## Pinhole Camera Model
 
-![[Growth Log/images/Pasted image 20260314100143.png]]
+![[growth log/images/Pasted image 20260314100143.png]]
 
 > *[이미지 출처 : [wiki](https://en.wikipedia.org/wiki/Pinhole_camera_model)]*
 
@@ -106,13 +106,13 @@ Vector3 CalculateRayDirection(int i, int j, int W, int H, float x_max, float del
 
 ## Spherical Panoramic Camera Model
 
-![[Growth Log/images/Pasted image 20260314113456.png]]
+![[growth log/images/Pasted image 20260314113456.png]]
 > *[이미지 출처 : [GPPA President](https://www.youtube.com/watch?v=CqWzHQ5gjAs)]*
 
 필자가 생각하는 모습에 가까운 방식으로 보인다. 
 구현한 모습은 다음과 같다. 
 
-![[Growth Log/images/fd2fd57869f87597f231646242310ecb.mov]]
+![[growth log/images/fd2fd57869f87597f231646242310ecb.mov]]
 
 시점에 대하여 시각 벡터를 기반으로 FOV 를 계산하는 방식임으로 다음과 같은 순서가 필요하다
 
@@ -162,14 +162,14 @@ void	ft_pixel_set_axis(t_scene *scene)
 상위의 결과는 간단히 보면 세계지도와도 같다고 볼 수 있다. 
 세계지도 또한 구의 형태를 하나의 직사각형에 넣기 위하여 왜곡된 모습을 하고 있기에 남극과 북극에 가까울 수록 보다 큰 모습을 하고 있기 때문이다.
 
-![[Growth Log/images/Pasted image 20260314123339.jpg]]
+![[growth log/images/Pasted image 20260314123339.jpg]]
 > *[이미지 출처 : [Wiki](https://en.wikipedia.org/wiki/Interruption_(map_projection))]*
 
 실제 많은 이들이 이런 왜곡에 대하여 고민을 많이하고 사람의 눈또한 왜곡된 모습을 보기 편한 식으로 뇌가 필터링 하여 보여주고 있기 때문에 오히려 이러한 변환 결과가 실제고 왜곡된 모습이 가짜라 생각하는 경우가 많다. 🤔
 
 | 실제 이미지 | 원하는 이미지 |
 | --- | --- |
-| ![[Growth Log/images/Pasted image 20260314123532.jpg]] | ![[Growth Log/images/Pasted image 20260314123602.jpg]]|
+| ![[growth log/images/Pasted image 20260314123532.jpg]] | ![[growth log/images/Pasted image 20260314123602.jpg]]|
 > *[이미지 출처 : [Nvidia](https://docs.nvidia.com/vpi/2.0/algo_ldc.html)]*
 
 상위에 대한 이미지를 보면 왜곡된 모습 (Lens Distortion Correction)에 대하여 이질감을 느끼기 때문에 왜곡을 펴주는 방식 또한 일부 픽셀을 포기하며 늘리는 방식을 채택하게 되었을 거라 생각한다.

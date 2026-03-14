@@ -14,7 +14,8 @@ writer : kyoulee
 
 ## 눈과 시야
 
-![[Growth Log/images/Pasted image 20260314091705.jpg]]
+![[growth log/images/Pasted image 20260314091705.jpg]]
+
 > *[이미지 출처 : [displaymodule.com](https://www.displaymodule.com/)]*
 
 이번에 방통대 그래픽스 수업을 마치며 몇 가지 의문점 중 시야각에 대한 설명을 듣고 FOV의 한계가 있는 방식의 로직이라는 것이 보이며 한계가 없는 FOV에 대하여 고민하고 설계 하였던 방식을 작성해 보려 한다.
@@ -22,6 +23,7 @@ writer : kyoulee
 ## Pinhole Camera Model
 
 ![[Growth Log/images/Pasted image 20260314100143.png]]
+
 > *[이미지 출처 : [wiki](https://en.wikipedia.org/wiki/Pinhole_camera_model)]*
 
 기존의 보편적으로 사용하는 방식이다. 

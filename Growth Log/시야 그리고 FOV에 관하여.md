@@ -1,5 +1,5 @@
 ---
-title: 1. 시야 그리고 FOV에 관하여
+title: 시야 그리고 FOV에 관하여
 description : kyoulee blog
 preview: /growth%20log/images/pasted%20image%2020260314091705.jpg
 created: 2026-03-14T09:03:29+09:00

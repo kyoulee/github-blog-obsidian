@@ -1,12 +1,14 @@
 ---
 title: Markdown Test
+description: kyoulee blog
+preview: /post/templates/images/default-og-image.jpg
 created: 2025-11-18 08:11:49+09:00
 updated: 2025-11-18 08:11:49+09:00
 tags:
   - Markdown
-status: in progress
-alias:
-  - Markdown Test
+status: public
+id: 0
+writer: kyoulee
 ---
 
 ## 📝 Markdown 종합 테스트 파일 (Sample.md)
